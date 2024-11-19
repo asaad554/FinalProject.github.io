@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    direction: rtl;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation & Header */
+nav {
+    background-color: #3b2a2a6e;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #49301c;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+.navli {
+    margin: 0 40px;
+}
+
+/* Section Landing */
+.landing {
+    background: url('../images/DALL·E\ 2024-11-04\ 13.56.26\ -\ A\ welcoming\ header\ image\ for\ an\ Arabic\ coffee\ shop\ website.\ The\ image\ features\ a\ cozy\,\ warm\ atmosphere\ with\ traditional\ Arabic\ décor\,\ such\ as\ an\ Arabi.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.landing::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.landing-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.landing-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.landing-content p {
+    font-size: 18px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.coffee-button {
+    background: linear-gradient(145deg, #8b5e34, #5c3b21);
+    color: #f4e3d7; 
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.coffee-button:hover {
+    background: linear-gradient(145deg, #5c3b21, #8b5e34); 
+    transform: translateY(-3px); 
+}
+
+.coffee-button:active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(244, 227, 215, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Cards Section */
+.cards-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.cards-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #500d0d;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #500d0d;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+#card_button{
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #500d0d;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#card_button:hover{
+    background-color: #49301c;
+}
+
+#about {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #500d0d; 
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about-image {
+    margin-top: 30px;
+    max-width: 100%;
+    border-radius: 10px;
+    width: 50%;
+}
+
+/* Forms Section */
+.form-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #500d0d;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form input,
+.form-container form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container form button {
+    padding: 10px;
+    background-color: #500d0d;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container form button:hover {
+    background-color: #49301c;
+}
+
+/* Footer & Contact */
+footer {
+    background-color: #dddddd;
+    padding: 35px 20px;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #500d0d;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section a{
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-section a:hover {
+    color: #673535;
+}
+
+/* Responsive Map */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#copy-right{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#copy-right p{
+    margin: 0 3px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .landing-content h1 {
+        font-size: 36px;
+    }
+
+    .cards-section h2,
+    .form-section h2 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+
+    .about-image{
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    #copy-right{
+        justify-content: center;
+    }
+}

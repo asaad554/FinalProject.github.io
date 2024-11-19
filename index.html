@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon"
+        href="./images/DALL_E_2024-11-04_13.42.29_-_An_elegant_logo_for_an_Arabic_coffee_shop_named__مقهى_الأمثال_._The_design_should_reflect_traditional_Arabic_aesthetics__incorporating_warm_earthy_col-removebg-preview.png"
+        type="LogoPage">
+    <title>مقهى الأمثال</title>
+</head>
+
+<body>
+
+    <!-- Navigation & Header -->
+    <nav>
+        <ul>
+            <li class="navli"><a href="#"><img id="logo"
+                        src="./images/DALL_E_2024-11-04_13.42.29_-_An_elegant_logo_for_an_Arabic_coffee_shop_named__مقهى_الأمثال_._The_design_should_reflect_traditional_Arabic_aesthetics__incorporating_warm_earthy_col-removebg-preview.png"
+                        alt="logo"></a></li>
+            <li class="navli"><a href="#home">الرئيسية</a></li>
+            <li class="navli"><a href="#menu">القائمة</a></li>
+            <li class="navli"><a href="#about">عنّا</a></li>
+            <li class="navli"><a href="#contact">التواصل</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Landing -->
+    <section class="landing" id="home">
+        <div class="landing-content">
+            <h1>مرحبا بكم في مقهى الأمثال</h1>
+            <p>استمتع بأجواء مريحة وخدمات رائعة مع أفضل المشروبات والأطباق الشهية.</p>
+            <div class="button-container">
+                <a href="#about" class="coffee-button">
+                    ☕ تعرف على المزيد
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section" id="menu">
+        <h2>أبرز الأطباق والمشروبات</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="./images/2149192029.jpg" alt="قهوة عربية">
+                <div class="card-content">
+                    <h3>قهوة عربية</h3>
+                    <p>قهوة غنية بنكهة التوابل التقليدية.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/freepik__expand__79986.png" alt="شاي بالنعناع">
+                <div class="card-content">
+                    <h3>شاي بالنعناع</h3>
+                    <p>شاي منعش بنكهة النعناع الطازج.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/freepik__expand__85814.png" alt="ساندويش الدجاج">
+                <div class="card-content">
+                    <h3>عصائر طبيعية</h3>
+                    <p>عصائر طبيعية بنكهات متنوعة.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/freepik__expand__86859.png" alt="كيك الشوكولاتة">
+                <div class="card-content">
+                    <h3>كيك الشوكولاتة</h3>
+                    <p>كيك شوكولاتة غني ولذيذ يناسب جميع الأذواق.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a id="card_button" href="./list.html">المزيد</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div>
+            <h2>من نحن</h2>
+            <p>أهلاً وسهلاً بكم في مقهانا الدافئ، حيث نقدم لكم أجواء مميزة تجمع بين عبق القهوة ودفء الأصدقاء. نسعى في
+                مقهى الأمثال إلى خلق بيئة تجمع الأصدقاء والعائلة في مكان هادئ وجميل، لنقدم لكم أفضل ما في عالم القهوة
+                والمأكولات الشهية.</p>
+            <p>سواء كنت تبحث عن قهوة سريعة أو جلسة استرخاء ممتعة، فريقنا هنا ليقدم لكم تجربة مميزة تعكس الجودة والراحة
+                والنكهات الأصيلة. انضموا إلينا، ودعونا نصنع لحظات لا تُنسى معاً!</p>
+        </div>
+        <img src="./images/DALL·E 2024-11-05 10.43.10 - A warm, cozy coffee shop interior scene with soft lighting and a welcoming atmosphere. The decor includes wooden tables and chairs, exposed brick wall.webp"
+            alt="صورة مقهى دافئة" class="about-image">
+    </section>
+
+    <!-- Forms Section -->
+    <section class="form-section" id="contact">
+        <h2>تواصل معنا أو احجز مقعدك</h2>
+        <div class="form-container">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="الاسم الكامل" required>
+                <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                <input type="text" name="phone" placeholder="رقم الهاتف" required>
+                <textarea name="message" rows="5" placeholder="رسالتك أو استفسارك" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer>
+        <div class="footer-container">
+            <!-- الموقع الجغرافي -->
+            <div class="footer-section">
+                <h3>موقعنا</h3>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?" width="600" height="450" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <!-- معلومات التواصل -->
+            <div class="footer-section" style="margin: 0 30px;">
+                <h3>التواصل معنا</h3>
+                <p>العنوان: غزة, شارع الوحدة, مقابل ستاربكس</p>
+                <p>الهاتف: +970 123 456 789</p>
+                <p>البريد الإلكتروني: asaadrm2025@gmail.com</p>
+            </div>
+            <!-- ساعات العمل -->
+            <div class="footer-section">
+                <h3>ساعات العمل</h3>
+                <p>الأحد - الخميس: 8:00 صباحًا - 10:00 مساءً</p>
+                <p>الجمعة: 10:00 صباحًا - 12:00 مساءً</p>
+                <p>السبت: مغلق</p>
+            </div>
+
+            <div class="footer-section">
+                <ul>
+                    <li>
+                        <a href="#">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">القائمة</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="copy-right">
+            <p>&copy; 2024,</p>
+            <p>صمم بواسطة <b>أسعد إسماعيل</b></p>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
